@@ -1,4 +1,4 @@
-﻿<!--ドッグタイプ（HTML5）を宣言 -->
+<!--ドッグタイプ（HTML5）を宣言 -->
 <!doctype html>
 
 <!--ページの内容がどの国か。日本ならja -->
@@ -7,12 +7,38 @@
 <!--ブラウザには表示されないが、ブラウザに表示させる情報を入力。文字コードなど -->
   <head>
     <meta charset="UTF-8">
+
+    <!--タグに内容を表示させる-->
     <title>結婚式場のコンセプト -HOTEL IMPERIAL RESORT TOKYO</title>
+
+    <!--cssを読み込む。パスの指定-->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
 <!--webページに表示させる内容。Hello worldとか -->
   <body>
+
+    <!--ページの先頭に戻れるようにid属性を書いておく-->
+    <header id="top">
+
+      <!--ｈ1～ｈ６は見出し。１からスタート。
+      画像ロゴを読み込む、a(アンカー)でリンク先に行けるようにする
+      href=リンク先のアドレス
+      img src イメージソースと画像先
+      altには画像が表示されない、出来なかった場合に表示する文字-->
+      <h1><a href="index.html"><img src="images/logo.png" alt="HOTEL IMPERIAL RESORT TOKYO"></a></h1>
+
+    </header>
+
+    <!--navタグで各ページとリンク出来るようにする-->
+    <nav>
+     <ul>
+       <li id="nav_concept"><a href="concept.html">結婚式場のコンセプト</a></li>
+       <li id="nav_plan"><a href="plan.html">プランのご案内</a></li>
+       <li id="nav_fair"><a href="fair.html">ブライダルフェア</a></li>
+       <li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
+     </ul>
+    </nav>
   </body>
 
 </html>
