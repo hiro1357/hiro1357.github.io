@@ -85,6 +85,50 @@ nav ul li#nav_contact a {
   background-image: url(../images/nav4.png)
 }
 
+/*idコンテンツを二つに分ける
+  親でフロート解除*/
+#contents {
+  overflow: hidden;
+}
+/*メインをフロートの左寄せにして、幅を570pxにする*/
+#main {
+  float: left;
+  width: 570px;
+}
+/*サブ領域をフロートの右寄せにして、幅を230pxにする
+  もともとの幅は840pxだったので、メインとサブに40pxの余白が入る*/
+#sub {
+  float: right;
+  width: 230px;
+}
+
+/*フッター領域とコンテンツの間に余白を付ける*/
+footer {
+  padding-top: 70px;
+}
+
+/*idメインのh1タグのフォントを変更する*/
+#main h1 {
+  margin: 0 0 30px 0;
+  padding: 35px 0 35px 65px;
+  font-size: 156.25%;
+  /*背景に複数の画像を読み込み、表示する*/
+  background-image: url(../images/bg_h1_head.png), url(../images/bg_h1_bottom.png);
+
+  /*画像を上下左右に繰り返すかどうかを設定する*/
+  background-repeat: no-repeat, no-repeat;
+
+  /*画像の表示開始位置を設定する*/
+  background-position: left top, left bottom;
+}
+
+/*マウスが画像の上にくると画像が半透明になる*/
+.bnr_inner a p img:hover {
+  opacity: 0.8;
+}
+
+
+
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
