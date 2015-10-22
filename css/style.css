@@ -122,6 +122,17 @@ footer {
   background-position: left top, left bottom;
 }
 
+/*各ナビに装飾。マウス置くとハイライト、そのページを開いていると初めからハイライト*/
+/*各ボディIDと各ナビのULの組合せ*/
+#concept #nav_concept a,
+#plan #nav_plan a,
+#fair #nav_fair a,
+#contact #nav_contact a,
+/*マウスを乗せたら画像が45px上にずれて表示する*/
+nav ul li a:hover{
+  background-position: 0 -45px;
+}
+
 /*マウスが画像の上にくると画像が半透明になる*/
 .bnr_inner a p img:hover {
   opacity: 0.8;
