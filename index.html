@@ -1,0 +1,113 @@
+<!--ドッグタイプ（HTML5）を宣言 -->
+<!doctype html>
+
+<!--ページの内容がどの国か。日本ならja -->
+<html lang="ja">
+
+<!--ブラウザには表示されないが、ブラウザに表示させる情報を入力。文字コードなど -->
+  <head>
+    <meta charset="UTF-8">
+
+    <!--タグに内容を表示させる-->
+    <title>結婚式場のコンセプト -HOTEL IMPERIAL RESORT TOKYO</title>
+
+    <!--cssを読み込む。パスの指定-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+<!--webページに表示させる内容。Hello worldとか -->
+  <body>
+
+    <!--ページの先頭に戻れるようにid属性を書いておく-->
+    <header id="top">
+
+      <!--ｈ1～ｈ６は見出し。１からスタート。
+      画像ロゴを読み込む、a(アンカー)でリンク先に行けるようにする
+      href=リンク先のアドレス
+      img src イメージソースと画像先
+      altには画像が表示されない、出来なかった場合に表示する文字-->
+      <h1><a href="index.html"><img src="images/logo.png" alt="HOTEL IMPERIAL RESORT TOKYO"></a></h1>
+
+    </header>
+
+    <!--navタグで各ページとリンク出来るようにする-->
+    <nav>
+      <ul>
+        <li id="nav_concept"><a href="concept.html">結婚式場のコンセプト</a></li>
+        <li id="nav_plan"><a href="plan.html">プランのご案内</a></li>
+        <li id="nav_fair"><a href="fair.html">ブライダルフェア</a></li>
+        <li id="nav_contact"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+
+    <!-- タグをそのまま入力してctrl+スペースで＜＞＜/＞などを補完してくれる
+         タグごとにまとめていると勝手に空白が入っている。
+         パンくずリストを作成して、足跡を残せるようにする -->
+    <div id="breadcrumb">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li>結婚式場のコンセプト</li>
+      </ul>
+    </div>
+
+    <!-- コンテンツ領域を作成する -->
+    <div id="contents">
+
+      <!-- メイン領域を作成する -->
+      <div id="main">
+        <article>
+          <!-- 見出しを付ける。h1タグを付けると文字が大きい -->
+          <h1>結婚式場のコンセプト</h1>
+        </article>
+      </div>
+
+      <!-- サブ領域を作成する -->
+      <div id="sub">
+        <aside>
+
+          <div class="bnr_inner">
+
+            <!-- アンカーでリンクを作成する -->
+            <a href="plan.html">
+              <!-- <dl>は定義リスト、普段は多くのリストがあるときに使用
+                      用語があって、説明がある。
+                      <dl>用語を入力</dl>
+                        <dd>説明を入力</dd>
+                    </dl> -->
+              <dl>
+                <dt><img src="images/bnr_plan.jpg" alt="プランのご案内"></dt>
+                <dd>標準のプランをご紹介いたします。</dd>
+              </dl>
+            </a>
+          </div>
+
+          <div class="bnr_inner">
+            <!-- アンカーでリンクを作成する -->
+            <a href="contact.html">
+              <!-- pは段落をつける -->
+              <p><img src="images/bnr_contact.png" alt="お問い合わせ"></p>
+            </a>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+
+    <div>
+      <!-- フッターを作成する -->
+      <footer>
+        <!-- ページ内のリンクを作成、一番下から一番上まで id属性を指定する（＃属性) -->
+        <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+
+        <!-- アドレスは連絡先、記事の途中でアドレスを付けると、その記事を書いた人の連絡先を表す -->
+        <address>東京都千代田区X-X-X   電話 0120-000-XXX   営業時間 11：00～20：00（水曜日定休）</address>
+
+        <!-- 実態参照 (c)などの文字実態参照 -->
+        <p id="copyright"><small>Copyright &copy;2014 HOTEL IMPERIAL RESORT TOKYO All rights reserved.</small></p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>
