@@ -2,6 +2,89 @@
 
 /* 基本レイアウト ここから↓ */
 
+/*style.cssを読み込む。相対リンクに注意*/
+@import url(common.css);
+
+/*backgoround-colorで背景色を変更、colorでテキストの色を変更*/
+body {
+  background-color: #f3f2e9;
+    /*background-color: black;*/
+  color: #5f5039;
+  /*color: rgba(255,255,255,0.2);*/
+
+  /*フォントのサイズを指定*/
+  font-size:87.5%;
+
+  /*テキストの高さを設定する。フォントサイズの設定があるので、それを基に大きくなる
+    真ん中に文字がくる*/
+  line-heigth:1.5;
+}
+
+  /*まとめて中央に揃える idを指定した時は#,タグで作成している時はそのまま*/
+  header, nav, #breadcrumb, #contents, footer {
+
+    /*上、右、下、左の順番で値が当たる
+      一番外側の余白のこと*/
+    margin: 0 auto 0 auto;
+
+    /*サイズを指定しないと端から端までの領域を取ろうとする*/
+    width: 840px;
+}
+
+header h1 {
+    margin: 0 0 26px 0;
+    padding-top: 28px;
+    text-align: center;
+}
+
+/*箇条書きの点を削除して、文字を左に寄せる*/
+nav ul {
+
+  /*親要素でoverflow: hidden;とすると箱庭的な使い方が出来る。
+    その場所でしかフロートが効かなくなる（本来の使い方ではない）*/
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/*ナビの箇条書き項目をfloatで横並びにする*/
+nav ul li {
+  /*float:left;と書くことで箇条書きが左上に集まる
+    widthで大きさを決めた。入りきらない場合は次の
+    段落へ移動する
+    解除しないと、これ以降も集まろうとする*/
+  float: left;
+
+  /*箇条書きのボックスの大きさを設定*/
+  width: 210px;
+}
+
+nav ul li a {
+  overflow: hidden;
+  /*インライン<->ブロックに変換する*/
+  display: block;
+  /*アンカーの高さを変更して、クリック->リンクできるようにする*/
+  padding-top: 44px;
+  /*高さを0にしているので、文字が見えなくなる*/
+  height: 0;
+}
+
+/*ナビのリンクに画像を張り付ける
+  url(../)で上のフォルダ階層にあるファイルを指定する*/
+nav ul li#nav_concept a {
+  background-image: url(../images/nav1.png)
+}
+nav ul li#nav_plan a {
+  background-image: url(../images/nav2.png)
+}
+nav ul li#nav_fair a {
+  background-image: url(../images/nav3.png)
+}
+nav ul li#nav_contact a {
+  background-image: url(../images/nav4.png)
+}
+
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
