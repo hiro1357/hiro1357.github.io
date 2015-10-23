@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
 
     <!--タグに内容を表示させる-->
-    <title>結婚式場のコンセプト -HOTEL IMPERIAL RESORT TOKYO</title>
+    <title>プランのご案内 -HOTEL IMPERIAL RESORT TOKYO</title>
 
     <!--cssを読み込む。パスの指定-->
     <link rel="stylesheet" href="css/style.css">
@@ -46,7 +46,7 @@
     <div id="breadcrumb">
       <ul>
         <li><a href="index.html">ホーム</a></li>
-        <li>結婚式場のコンセプト</li>
+        <li>プランのご案内</li>
       </ul>
     </div>
 
@@ -57,7 +57,61 @@
       <div id="main">
         <article>
           <!-- 見出しを付ける。h1タグを付けると文字が大きい -->
-          <h1>結婚式場のコンセプト</h1>
+          <h1>プランのご案内</h1>
+
+            <!-- 表を作成する
+                 <table>を宣言する
+                   <tr>テーブル行の定義
+                     <th>項目を定義する
+                       <td>項目の内容やデータを入力
+                       の順番に書いていく -->
+            <table>
+
+            <caption>
+              <strong>標準的なプラン例</strong>
+              <p>標準的な内容のプランをご紹介いたします。実際のプランはお客様に合わせてご提案いたしますので、お気軽のお問い合わせください</p>
+            </caption>
+
+              <thead>
+                <tr>
+                  <!-- スクリーンリーダの為にscope属性を追加 -->
+                  <th scope="col">項目</th>
+                  <th scope="col">説明</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">挙式会場</th>
+                  <td>アルカンジュ（チャペル）</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">披露宴</th>
+                  <td>お料理、お飲物、花嫁衣裳（２種類）、花婿衣装（２種類）、招待状、ブーケ、引き出物、写真撮影など</td>
+                </tr>
+
+                <tr>
+                  <th scope="row">費用</th>
+                  <td>計40名様…1,852,381円<br>計60名様…2,743,290円</td>
+                </tr>
+
+                <tr>
+                  <!-- rowspanを使って縦のセルを結合する
+                       横のセルを結合するにはcolspan -->
+                  <th rowspan="3" scope="rowgroup">オプション</th>
+                  <td>オリジナルスイーツ</td>
+                </tr>
+                <tr>
+                  <td>お子様用お料理</td>
+                </tr>
+                <tr>
+                  <td>キャンドルサービス</td>
+                </tr>
+              </tbody>
+
+            </table>
+
         </article>
       </div>
 

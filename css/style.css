@@ -206,6 +206,49 @@ nav ul li a:hover{
 
 /* 「プランのご案内」ページ ここから↓ */
 
+table {
+  /*項目と説明のブロックの隙間をなくす*/
+  /*separateにすると隙間あり、collapseにすると隙間なし
+        ↑の時にスペースを決めることが出来る*/
+  border-collapse: collapse;
+}
+
+/*表に線を引いて、余白を追加*/
+table th, table td {
+  padding: 15px;
+  border: 1px solid #6c5f45;
+}
+table tr th:first-child {
+  width: 70px;
+}
+
+/*項目を上端に揃える*/
+table tbody th,
+table tbody td {
+  vertical-align: top;
+}
+
+/*表の色を変更する。項目と内容、偶数行、奇数行*/
+table thead tr th {
+  background-color: #eee8cc;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f4f2f0;
+}
+
+/*キャプションが中央揃えになっているので、左詰めにして、marginを無くす*/
+caption {
+  text-align: left;
+  margin-bottom: 30px;
+}
+caption p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* 「プランのご案内」ページ ここまで↑ */
 
 /* 「ブライダルフェア」ページ ここから↓ */
