@@ -8,11 +8,20 @@
   <head>
     <meta charset="UTF-8">
 
+    <!-- スマホなどのデバイスで見るときのレイアウトを設定する
+         meta name="viewport" 初期処理を早くするため。
+         書かないと一度表示して、端末のサイズに合わせて縮小。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <!--タグに内容を表示させる-->
     <title>結婚式場のコンセプト -HOTEL IMPERIAL RESORT TOKYO</title>
 
     <!--cssを読み込む。パスの指定-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- 最大でも480pxしか画面がない場合にこちらを読み込む -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+
   </head>
 
 <!--webページに表示させる内容。Hello worldとか -->

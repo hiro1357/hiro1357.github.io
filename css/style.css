@@ -138,15 +138,69 @@ nav ul li a:hover{
   opacity: 0.8;
 }
 
-
-
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
 
+/*list-styleをnoneにしてulの中点を消して、paddingをゼロで余白を削る*/
+#news ul {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+#news ul li {
+  padding: 20px 0 20px 175px;
+
+  /*ボックスに線を引く。種類が多い*/
+  border-bottom: 1px dotted #6c5f45;
+  color: #342300;
+
+  /*段落がどこから始まるか指定できる*/
+  text-indent: -175px;
+}
+
+/*2行目の為に、indentやwidthを-や+や0で調整
+  1行目だけだとtimeタグにpaddingやwidthを設定してあげれば良い*/
+#news ul li time{
+  display: inline-block;
+  width: 175px;
+  font-weight: bold;
+  color: #6c5f45;
+  text-indent: 0;
+}
+
+
 /* トップページ ここまで↑ */
 
 /* 「結婚式場のコンセプト」ページ ここから↓ */
+
+/*画像がフロートしているので、その祖先内でしか動かないようにoverflow
+  bottomを付けてあげて、それぞれがひとまとまり感を出せるようにしてあげる*/
+.concept_box {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+/*画像を右に置き、文章が左に回り込むようにする*/
+.image_right {
+  float: right;
+  margin-left: 25px;
+}
+
+/*画像を左に置き、文章が右に回り込むようにする*/
+.image_left {
+  float: left;
+  margin-right: 25px;
+}
+
+/*一番下のマージンの余白を消したい。
+  :last-childを使う。*/
+/*コンセプトボックスの一番下を指定*/
+.concept_box:last-child,
+/*コンセプトボックスのpタグの一番下を指定*/
+.concept_box p:last-child {
+  margin-bottom: 0;
+}
 
 /* 「結婚式場のコンセプト」ページ ここまで↑ */
 
