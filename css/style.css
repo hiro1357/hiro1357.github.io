@@ -279,4 +279,37 @@ caption p {
 
 /* 「お問い合わせ」ページ ここから↓ */
 
+/*各項目の余白を設定*/
+form p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/*nth-last-child(数字)で、最後から何番目と指定できる*/
+form p:nth-last-child(2) {
+  margin-bottom: 7px;
+}
+form p:last-child {
+  margin-bottom: 0;
+}
+
+/*なんでもかんでもinputにすると全部大きさが変わってしまうので、
+属性値も追加しておく。*/
+input[type="text"] {
+  width: 200px;
+}
+
+input[type="email"]{
+  width: 300px;
+}
+
+/*お問い合わせ内容のフォームを設定
+  overflow: scroll で内容がはみ出したときにスクロールバーが有効になる。
+  -x,-yを付けることにより、片方だけ表示できる*/
+textarea {
+  width: 420px;
+  height: 115px;
+  overflow-y: scroll;
+}
+
 /* 「お問い合わせ」ページ ここまで↑ */

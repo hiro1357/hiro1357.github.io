@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
 
     <!--タグに内容を表示させる-->
-    <title>結婚式場のコンセプト -HOTEL IMPERIAL RESORT TOKYO</title>
+    <title>お問い合わせ -HOTEL IMPERIAL RESORT TOKYO</title>
 
     <!--cssを読み込む。パスの指定-->
     <link rel="stylesheet" href="css/style.css">
@@ -46,7 +46,7 @@
     <div id="breadcrumb">
       <ul>
         <li><a href="index.html">ホーム</a></li>
-        <li>結婚式場のコンセプト</li>
+        <li>お問い合わせ</li>
       </ul>
     </div>
 
@@ -57,7 +57,34 @@
       <div id="main">
         <article>
           <!-- 見出しを付ける。h1タグを付けると文字が大きい -->
-          <h1>結婚式場のコンセプト</h1>
+          <h1>お問い合わせ</h1>
+          <p>会場やプランについてのお問い合わせは、下記フォームよりお気軽にお寄せください。</p>
+          <ul>
+            <li>必要事項を記入し、「確認する」をクリックしてください。</li>
+            <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+          </ul>
+
+          <!-- フォーム領域の作成 -->
+          <!-- action="URL"だが、未定の時はから文字ではなく、#を入力しておく -->
+          <form action="#">
+            <!-- labelタグで囲むと、表題をクリックしても入力へいける。扱いやすい -->
+            <p><label>お名前（必須）<br>
+
+            <!-- 属性値と、どの内容で送られているか、名前を付けておく -->
+            <!-- 属性値にplaceholder="内容"を加えておくと、薄いグレー文字で内容が表示
+                 入力すると消える、見本が作成できる。 -->
+            <input type="text" name="name" placeholder="山田  太郎" required></label></p>
+            <p><label>メールアドレス（必須）<br>
+            <input type="email" name="mail" placeholder="exam@example.com" required></label></p>
+            <p>お問い合わせの種類<br>
+            <label><input type="radio" name="kind" value="0">事前のご相談</label> <label><input type="radio" name="kind" value="1">その他</label></p>
+            <p><label>内容<br>
+            <textarea name="comment" placeholder="ご意見・ご要望をご記入ください。"></textarea></label></p>
+
+            <!-- フォームの内容をサーバーに投げる、送るボタンをinput type="submit"で作成
+                  value="表示の内容" -->
+            <p><input type="submit" value="確認する"</p>
+          </form>
         </article>
       </div>
 
