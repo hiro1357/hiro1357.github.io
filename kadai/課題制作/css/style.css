@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/*土台のスタイルここから*/
+body {
+  /*background-color: #f5f5f5;*/
+  background-image: url(../素材/b067.gif);
+  /*background-repeat: repeat-x;*/
+  /*background-size: cover;*/
+  background-position: top;
+  width: 1000px;
+  margin: 20px auto 0 auto;
+  /*background-color: blue;*/
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 20px 0 20px 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  width: 250px;
+  display: block;
+  padding-top: 38px;
+  float: left;
+}
+
+nav ul #nav_modoru {
+  background-image: url(../素材/TOP2.jpg);
+  background-repeat: no-repeat;
+}
+
+nav ul #nav_kodawari {
+  background-image: url(../素材/osusume2.jpg);
+  background-repeat: no-repeat;
+}
+
+nav ul #nav_toiawase {
+  background-image: url(../素材/toiawase2.jpg);
+  background-repeat: no-repeat;
+}
+
+nav ul #nav_kaisya {
+  background-image: url(../素材/kaisya2.jpg);
+  background-repeat: no-repeat;
+}
+
+nav ul #nav_modoru:hover {
+  background-position: 0 -40px;
+}
+nav ul #nav_kodawari:hover {
+  background-position: 0 -40px;
+}
+nav ul #nav_toiawase:hover {
+  background-position: 0 -40px;
+}
+nav ul #nav_kaisya:hover {
+  background-position: 0 -40px;
+}
+
+#top {
+  position: fixed;
+  /*background-image:url(../素材/footer_bg.jpg);*/
+  top: 0;
+  /*background-size: cover;*/
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  text-indent: 25px;
+  background-image: url(../素材/title01_01.jpg);
+  background-size: cover;
+}
+
+.kuhaku {
+  padding-top: 10px;
+}
+
+/*土台のスタイルここまで*/
+
+
+/*スライドショーのスタイルここから*/
+#main {
+  background-color: white;
+  margin-top: 100px;
+  padding-top: 0px;
+  border: 2px solid black;
+}
+h1 {
+  margin: 0;
+}
+
+#image {
+  width: 996px;
+  height: 650px;
+  background-image: url(../素材/slide4.jpg),url(../素材/slide5.jpg),url(../素材/slide6.jpg);
+  background-repeat: no-repeat;
+  animation: slideshow  10s infinite;
+}
+@keyframes slideshow {
+  25% {
+    background-image: url(../素材/slide4.jpg);
+  }
+  50% {
+    background-image: url(../素材/slide5.jpg);
+  }
+  75% {
+    background-image: url(../素材/slide6.jpg);
+  }
+
+}
+
+/*スライドショーのスタイルここまで*/
+#image {
+  text-align: center;
+  margin: 0 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/*オススメのスタイルここから*/
+#push {
+  border: 2px solid black;
+  background-color: white;
+  padding-top: 0;
+  overflow: hidden;
+}
+h2 {
+  margin-top: 0px;
+}
+
+#maru {
+  padding-top: 20px;
+}
+
+.image_box tag {
+  margin: 0 0 0 40px;
+}
+.image_box tag:first-child {
+  margin-left: 0;
+}
+
+
+#sistem p {
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-size: 105%;
+}
+
+#maru {
+  display: block;
+  text-align: center;
+  margin: 0;
+  font-size: 105%;
+}
+
+#souryou {
+  padding-top: 20px;
+  font-size: 120%;
+  color: red;
+}
+
+h3 {
+  text-indent: 10px;
+  background-image: url(../素材/main_h3.jpg);
+  background-repeat: no-repeat;
+  width: 300px;
+  text-align: left;
+}
+
+/*オススメのスタイルここまで*/
+
+
+/*問い合わせのスタイルここから*/
+#contact {
+  padding-top: 20px;
+}
+#contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+input[type="text"] {
+  width: 200px;
+}
+input[type="email"] {
+  width: 300px;
+}
+
+#contact {
+  border: 2px solid black;
+  background-color: white;
+  padding-top: 0;
+}
+
+#contact p {
+  margin-left: 10px;
+}
+
+/*問い合わせのスタイルここまで*/
+
+
+/*会社案内のスタイルここから*/
+footer {
+  border: 2px solid black;
+  background-color: white;
+  padding-top: 0;
+  overflow: hidden;
+}
+.map {
+  margin-left: 120px;
+}
+
+.logo {
+  float: left;
+}
+
+address {
+  padding-top: 50px;
+  padding-left: 300px;
+}
+
+/*会社案内のスタイルここまで*/
